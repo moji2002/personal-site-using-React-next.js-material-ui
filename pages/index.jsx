@@ -5,19 +5,15 @@ import { Fragment, useContext } from 'react';
 import GlobalContext from '../context/globalContext';
 
 export default function Home() {
-  const globalContext = useContext(GlobalContext)
-  console.log(globalContext);
+  const global = useContext(GlobalContext);
+  console.log(global);
   return (
-    <GlobalContext.Consumer>
-      {global => (
-        <Fragment>
-          <CssBaseline />
-          <Head>
-            <title>Mojtaba</title>
-          </Head>
-          <Button onClick={global.func.toggleMode}>dark</Button>
-        </Fragment>)
-      }
-    </GlobalContext.Consumer>
+    <Fragment>
+      <CssBaseline />
+      <Head>
+        <title>Mojtaba</title>
+      </Head>
+      <Button onClick={global.func.toggleMode}>dark</Button>
+    </Fragment>
   );
 }
