@@ -1,11 +1,20 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import green from '@material-ui/core/colors/green';
-import { light } from '@material-ui/core/styles/createPalette';
 
 
-const theme = createMuiTheme({
-    direction: "rtl",
+const light = createMuiTheme({
+    typography: {
+        // fontFamily: "tahoma"
+    },
+    palette: {
+        type: 'light',
+        primary: green,
+        secondary: purple,
+    },
+});
+
+const dark = createMuiTheme({
     typography: {
         // fontFamily: "tahoma"
     },
@@ -23,4 +32,4 @@ const theme = createMuiTheme({
 });
 
 
-export default theme;
+export default {light,dark};
