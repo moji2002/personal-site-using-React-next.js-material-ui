@@ -32,4 +32,4 @@ const dark = createMuiTheme({
 });
 
 
-export default {light,dark};
+export default { light, dark };

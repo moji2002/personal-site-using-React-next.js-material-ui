@@ -1,13 +1,13 @@
 import Layout from '../componant/Layout';
 
-const Home = () => {
+const Contact = () => {
 
   return (
     <Layout children={
-      <h1>home</h1>
+      <h1>contact</h1>
     } />
   );
 };
 
 
-export default Home;
+export default Contact;

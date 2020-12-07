@@ -6,14 +6,17 @@ import '../styles/global.scss';
 
 
 export default function App({ Component, pageProps }) {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const toggleMode = () => setDarkMode(!darkMode);
 
   const context = {
-    func:{
+    func: {
       toggleMode
+    },
+    state: {
+      darkMode
     }
-  }
+  };
 
   return (
     <ThemeProvider theme={darkMode ? theme.dark : theme.light}>
