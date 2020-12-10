@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../styles/theme';
 import GlobalContext from '../context/globalContext';
+import Layout from '../components/Layout';
+
 import '../styles/global.scss';
 
 
@@ -21,7 +23,9 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={darkMode ? theme.dark : theme.light}>
       <GlobalContext.Provider value={context}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </GlobalContext.Provider>
     </ThemeProvider >
   );

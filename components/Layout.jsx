@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 import { Container, CssBaseline, Grid } from '@material-ui/core';
-import SlideBar from './slide-bar';
+import SlideBar from './SlideBar';
 
 const Layout = ({ children, debug }) => {
     return (
@@ -12,9 +12,8 @@ const Layout = ({ children, debug }) => {
             </Head>
             <SlideBar />
             <Container style={{ paddingLeft: "80px" }}>
-                <Grid container style={{ border: debug ? "1px yellow solid" : "" }}>
+
                     {children}
-                </Grid>
             </Container>
         </Fragment>
     );
