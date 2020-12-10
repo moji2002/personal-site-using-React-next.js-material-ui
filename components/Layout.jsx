@@ -12,9 +12,8 @@ const Layout = ({ children, debug }) => {
             </Head>
             <SlideBar />
             <Container style={{ paddingLeft: "80px" }}>
-                <Grid container style={{ border: debug ? "1px yellow solid" : "" }}>
+
                     {children}
-                </Grid>
             </Container>
         </Fragment>
     );

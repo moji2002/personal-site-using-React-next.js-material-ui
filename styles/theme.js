@@ -4,6 +4,13 @@ import green from '@material-ui/core/colors/green';
 
 
 const light = createMuiTheme({
+    overrides: {
+        MuiTooltip: {
+            tooltip: {
+                fontSize: "15px",
+            }
+        }
+    },
     typography: {
         // fontFamily: "tahoma"
     },
@@ -15,6 +22,13 @@ const light = createMuiTheme({
 });
 
 const dark = createMuiTheme({
+    overrides: {
+        MuiTooltip: {
+            tooltip: {
+                fontSize: "15px",
+            }
+        }
+    },
     typography: {
         // fontFamily: "tahoma"
     },
