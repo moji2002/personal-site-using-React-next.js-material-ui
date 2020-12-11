@@ -1,1 +1,1 @@
-This is my personal website build by using next.js and material-ui
+This is my personal website build by next.js and material-ui
