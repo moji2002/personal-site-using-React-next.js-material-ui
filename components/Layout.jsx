@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 import { Container, CssBaseline, Grid } from '@material-ui/core';
-import SlideBar from './SlideBar';
+import Header from './Header';
 
 const Layout = ({ children, debug }) => {
     return (
@@ -10,10 +10,9 @@ const Layout = ({ children, debug }) => {
             <Head>
                 <title>Mojtaba</title>
             </Head>
-            <SlideBar />
-            <Container style={{ paddingLeft: "80px" }}>
-
-                    {children}
+            <Header />
+            <Container style={{ padding: 30 }}>
+                {children}
             </Container>
         </Fragment>
     );

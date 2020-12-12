@@ -5,7 +5,7 @@ import UnderConstruction from '../components/UnderConstruction';
 const Portfolio = () => (
     <Fragment>
         <Head>
-            <title>Git | Mojtaba Beheshti</title>
+            <title>Portfolio | Mojtaba Beheshti</title>
         </Head>
         <UnderConstruction />
     </Fragment>
